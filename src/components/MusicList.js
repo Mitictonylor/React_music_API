@@ -6,7 +6,7 @@ import Music from './Music.js';
 const MusicList = (props) =>{
 
   const musicOptions = props.music.map((song, index) => {
-    return <Music music = {song} key = {index}/>
+    return <Music song = {song} position = {index + 1} key = {index}/>
   })
 
   return(
