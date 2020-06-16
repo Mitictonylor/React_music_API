@@ -14,10 +14,17 @@ class MusicBox extends Component{
     }
   }
 
+
+componentDidMount(){
+  const url = 'https://itunes.apple.com/gb/rss/topsongs/limit=40/json'
+  fetch(url).then(res =>res.json()).then(data =>this.setState({music: data.feed.entry}))
+}
+
+
   render(){
     return(
       <div className = "main-container">
-      <MusicList/>
+      <MusicList music={this.state.music}/>
       </div>
     )
   }
