@@ -1,10 +1,13 @@
 import React from 'react';
+import Music from './Music.js';
+
+
 
 const MusicList = (props) =>{
 
   return(
 
-<p>u cazzzzz</p>
+<Music/>
 
   )
 }
