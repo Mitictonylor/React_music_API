@@ -1,0 +1,9 @@
+.main-container{
+  width: 30%;
+  height: 60%;
+  border-color:black;
+  border: solid;
+  background-color: linen ;
+  padding: 5px;
+  margin: 10px;
+}
