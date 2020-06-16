@@ -18,16 +18,30 @@
 .song-play:active{
   color: dodgerBlue;
 }
-.album-cover{}
+.album-cover{
+  transition: 0.5s;
+  
+  flex: 1;
+}
+.album-cover:hover{
+  opacity: 0.3;
+}
 .position{
 font-size: 20;
 font-family: 'Rock Salt', cursive;
 
-  /* font-family: 'Lexend Tera', sans-serif;
-font-family: 'Rock Salt', cursive;
-font-family: 'Staatliches', cursive; */
+flex: 1;
 }
 .artist{font-size: 20;
-font-family: 'Rock Salt', cursive;}
+font-family: 'Rock Salt', cursive;
+flex: 1;}
 .song{font-size: 20;
-font-family: 'Rock Salt', cursive;}
+font-family: 'Rock Salt', cursive;
+flex: 1;}
+
+.flex-grid {
+  display: flex;
+}
+.player{
+  flex:1;
+}
