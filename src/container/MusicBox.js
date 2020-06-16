@@ -1,5 +1,9 @@
-import React, {Component} from 'react'
-import './MusicBox.css'
+import React, {Component} from 'react';
+import './MusicBox.css';
+import MusicList from '../components/MusicList.js';
+
+
+
 class MusicBox extends Component{
 
   constructor(props){
@@ -13,7 +17,7 @@ class MusicBox extends Component{
   render(){
     return(
       <div className = "main-container">
-      <p>AFAMMOKK</p>
+      <MusicList/>
       </div>
     )
   }
