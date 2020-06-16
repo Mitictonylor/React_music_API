@@ -1,5 +1,6 @@
 import React from 'react';
 import './Music.css';
+import ReactAudioPlayer from 'react-audio-player'
 
 const Music = (props) =>{
 
@@ -7,12 +8,15 @@ const Music = (props) =>{
 return(
 <>
   <li>
-  <img src={props.song["im:image"][2].label} className="albumCover"/>
-  <p >Position : {props.position}</p>
-  <p>Artist :{props.song['im:artist'].label} </p>
-  <p>Song : {props.song['im:name'].label}</p>
-  <a className ="song-play" href={props.song.link[1].attributes.href} target="_blank">Play</a>
-
+  <p className="position">Position : {props.position}</p>
+  <img className="album-cover" src={props.song["im:image"][2].label} />
+  <p className="artist">Artist :{props.song['im:artist'].label} </p>
+  <p className="song">Song : {props.song['im:name'].label}</p>
+  <ReactAudioPlayer
+    src={props.song.link[1].attributes.href}
+    autoPlay
+    controls
+  />
   </li>
 <hr/>
   </>
